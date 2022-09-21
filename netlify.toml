@@ -4,3 +4,7 @@
 
 [[plugins]]
   package = "netlify-plugin-cypress"
+
+[[edge_functions]]
+  path = "/shopify-geo"
+  function = "shopify-geo"
