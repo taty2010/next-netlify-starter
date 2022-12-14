@@ -14,7 +14,6 @@ export const handler = async (event) => {
     .then((res) => res.json())
     .catch((err) => console.error(err))
 
-    console.log(event.queryStringParameters)
     return {
         statusCode: 200,
         body: JSON.stringify(response)

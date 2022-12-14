@@ -8,7 +8,6 @@ export default function Product({product}){
 
   if(product.options){
     product.options.forEach(p => {
-      console.log(p.name.toLowerCase())
       if(p.name.toLowerCase() == 'color'){
         color = p.values
       }else if (p.name.toLowerCase() == 'size'){
