@@ -58,7 +58,7 @@ export default function Home({products}) {
 }
 
 export async function getStaticProps(){
-  const res = await fetch(process.env.NETLIFY == "true" ? `${process.env.URL}/shopify-geo` : 'http://localhost:8888/shopify-geo')
+  const res = await fetch(process.env.NETLIFY == "true" ? `${process.env.URL}/shopify-geo` : process.env.CONTEXT == "deploy-preview" ? `${process.env.DEPLOY_PRIME_URL}/shopify-geo` : 'http://localhost:8888/shopify-geo')
   const products = await res.json()
   return{
     props:{
