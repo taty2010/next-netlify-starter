@@ -7,7 +7,6 @@ import styles from './FeedbackForm.module.css'
 
 
 export default function Home({products}) {
-  console.log(process.env.CONTEXT)
   return (
     <Layout>
           <Header title="Shop our Tye-dye Collection" />
